@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>for you, baby</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments"></span><br />
+			<span class="space"/><span class="comments">AHAHAHAHAHAHAHA HI BABYYY, WAIT NAHIHIYA AKO</span><br />
+			<span class="space"/><span class="comments">:p</span><br />
+			Hiiii, Baby, Boo, Honey, Hun, Sweetheart, Darling, My Love, Love, Princess, Queen, Angel, Angel Face, Cutie, Cutie Pie, Pumpkin, Cupcake, Sugar, Sugarplum, Sweet Pea, Sunshine, Beautiful, Gorgeous, Pretty Girl, Wifey, Future Wife, Mrs., My Girl, Girlfriend, Beloved, Dearest, Precious, Flower, Blossom, Peonies, Lilies, Carnations, Cherry, Cookie, My Safe Place, My Comfort, My Home, My Forever. <br />
+			
+			Do you remember the day we first met?<br />
+			<span class="comments">I know I know sa ml lang yon but still, I am so blessed na makilala kita. </span><br />
+			but let's focus muna sa gusto ko sabihin sayo. yohoo dito ang tingin, baby.<br />
+			<span class="comments">Ready na baby? 1 2 3 Go! kaniya kaniya na</span><br />
+			I just want to remind you how special you are to me and how grateful I am that you came into my life. It's been 92 days since we started talking, and honestly, I'm so happy that those days led me to someone as wonderful as you. What started as a simple conversation has become something that I genuinely treasure every single day.<br />
+			You have this way of making my days better without even trying. Just seeing your name pop up on my screen, talking to you about random things, hearing about your day, and sharing little moments with you can make me happy in ways I can't fully explain. Even the simplest conversations mean so much to me because they're with you.<br />
+			I know that we're not perfect, and there might be days when things get difficult, when we misunderstand each other, or when we don't know exactly what to say. But I want you to know that I want to keep learning about you, understanding you, and loving you in the ways you deserve. I don't just want to be here for the happy moments. I want to be someone you can turn to when you're tired, someone who listens when you need to talk, and someone who reminds you that you don't have to face everything alone.<br />
+			Thank you for being you, mahal ko. Thank you for the time you give me, the little things you do, the smiles you bring to my face, and the memories we're slowly creating together. You may not always realize how much you mean to me, but I hope I can show you through my actions, my patience, and the way I continue to choose you every day.<br />
+			Mahal na mahal po kita, baby. Hindi ko man po kayang ilagay sa isang letter lahat ng nararamdaman ko para sa'yo, I hope these words give you even a little idea of how much you mean to me.<br />
+			I love you.<br />
+			<span class="comments">I think ang haba na po ata AHAHAHAHAHAAHHA sorry baby!</span><br />
+			I still have so much to say to you, my baby. pero tapusin ko na po here<br />
+			<br>
+			<br>
+			All I want to say po baby is that<br />
+			sobrang saya ko talaga na nakilala kita. I am forever grateful for you. And also po baby, gusto ko na rin sabihin dito how proud I am to you, I am so so sooo proud of youuuu!!! always remember na nandito lang ako palagi. you don't have to do it alone na, cause you have me na po baby:D ....... hi cute mo:P<br />
+			<br>
+			<br>
+			Click this heart baby if want mo ng isang malutong naaaaa... <br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					lookkkk!
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+				I love you<br/>
+					<div class="signature">- your baby Raf:p</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2026, 6, 26);
+together.setHours(12);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
